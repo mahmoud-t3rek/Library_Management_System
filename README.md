@@ -22,16 +22,16 @@ Includes **error handling**, **secure validation**, and **role-based access cont
 - **Node.js / Express**
 - **MongoDB / Mongoose**
 - **Joi** (validation)
-- **Multer** (file uploads)
 - **bcrypt** (password hashing)
 - **Express Rate Limit**
-- **Resend** (email sending)
+- 
 
 ---
 
 ## 📥 Installation
 
 ```bash
-git clone https://github.com/USERNAME/LibrarySystem.git
-cd LibrarySystem
+git clone https://github.com/mahmoud-t3rek/Library_Management_System.git
+cd Library_Management_System
 npm install
+

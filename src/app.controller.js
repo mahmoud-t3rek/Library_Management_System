@@ -9,7 +9,9 @@ const Bootstrap=(app,express)=>{
 
 app.use(express.json())
 Connection()
-
+app.get("/",(req,res,next)=>{
+  res.send(json({message:"Welcome to my library system"}))
+})
 app.use("/api/user",userRouter)
 app.use("/api/books",bookRouter)
 app.use("/api/transaction",transactionRouter)

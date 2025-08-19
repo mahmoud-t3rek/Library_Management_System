@@ -14,6 +14,10 @@ app.use("/api/user",userRouter)
 app.use("/api/books",bookRouter)
 app.use("/api/transaction",transactionRouter)
 app.use(globalErrorHandling)
+app.use("{/*demo}", (req, res, next) => {
+  throw new Error(`404 URL not found ${req.originalUrl}`, { cause: 404 });
+});
+
 }
 
 export default Bootstrap
